@@ -45,8 +45,8 @@ Assurez-vous d'avoir Python installé sur votre machine, puis installez les dép
 pip install streamlit pandas scikit-learn numpy joblib
 ```
 
-### 2. (Optionnel) Entraîner le Modèle
-Si vous souhaitez réentraîner le modèle avec de nouvelles données, ouvrez le fichier `notebook/code.ipynb` via Jupyter, exécutez toutes les cellules. Un nouveau fichier `meilleur_modele_prediction_occupation.joblib` sera alors généré dans le dossier `data/`.
+### 2.  Entraîner le Modèle
+Si vous souhaitez réentraîner le modèle avec de nouvelles données, ouvrez le fichier `notebook/code.ipynb` via Jupyter, exécutez toutes les cellules. Un nouveau fichier `meilleur_modele_prediction_occupation.joblib` sera alors généré dans le dossier `models/`.
 
 ### 3. Lancer le Tableau de Bord
 Ouvrez un terminal à la racine du projet (le dossier `projet_prediction_parking`) et exécutez la commande suivante :

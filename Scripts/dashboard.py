@@ -15,7 +15,7 @@ st.markdown("Ce tableau de bord utilise votre modèle de Machine Learning (Rando
 @st.cache_resource
 def load_model():
     # S'assurer que le chemin est correct selon d'où le ficher est lancé
-    chemin_modele = os.path.join("data", "meilleur_modele_prediction_occupation.joblib")
+    chemin_modele = os.path.join("models", "meilleur_modele_prediction_occupation.joblib")
     return joblib.load(chemin_modele)
 
 try:
@@ -24,6 +24,7 @@ try:
 except Exception as e:
     st.error(f"Erreur : Impossible de trouver le modèle. Avez-vous bien généré le fichier 'meilleur_modele_prediction_occupation.joblib' dans le dossier data ?\n\nErreur technique : {e}")
     st.stop()
+
 
 # 2. Interface utilisateur (Sliders et Menus)
 st.markdown("---")
